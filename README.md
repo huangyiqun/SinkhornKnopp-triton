@@ -10,3 +10,8 @@ pip install -e . --no-build-isolation
 ```bash
 python tests/test.py
 ```
+
+## code format check
+```bash
+pre-commit run --all-files
+```

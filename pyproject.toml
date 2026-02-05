@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SinkhornKnopp_triton"
+version = "0.1.0"
+description = "Sinkhorn-Knopp implementations (NumPy/PyTorch/Triton)"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "torch>=2.8.0",
+    "triton>=3.4.0",
+]
+
+[tool.setuptools]
+packages = ["SinkhornKnopp_triton"]
+
+[tool.setuptools.package-dir]
+SinkhornKnopp_triton = "src"
